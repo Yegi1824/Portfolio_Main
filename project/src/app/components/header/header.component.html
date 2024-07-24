@@ -1,0 +1,47 @@
+<div class="header">
+  <div class="header__wrapper">
+    <div class="header__wrapper__logo">
+      <img src="../../../assets/image/logo_white.png" alt="logo">
+    </div>
+    <div class="header__wrapper__menu">
+      <div class="header__wrapper__menu__item karantina-bold"
+           [ngClass]="{'active': getIsActiveMenu('aboutMe')}"
+           (click)="onChangeSlide('aboutMe')">
+        About me
+      </div>
+      <div class="header__wrapper__menu__item karantina-bold"
+           [ngClass]="{'active': getIsActiveMenu('myProjects')}"
+           (click)="onChangeSlide('myProjects')">
+        Projects
+      </div>
+      <div class="header__wrapper__menu__item karantina-bold"
+           [ngClass]="{'active': getIsActiveMenu('contactMe')}"
+           (click)="onChangeSlide('contactMe')">
+        Contacts
+      </div>
+    </div>
+
+<!--    Mobile-->
+    <!--<div class="header__wrapper__burgerMenu">
+      <div class="header__wrapper__burgerMenu__toggle" (click)="onToggleSideMenu()">BUTTON</div>
+      <div class="header__wrapper__burgerMenu__list" [ngStyle]="{transform: bSideMenuOpened ? 'translateX(0)' : 'translateX(200%)'}">
+        <div class="header__wrapper__burgerMenu__list__item karantina-bold"
+             [ngClass]="{'active': getIsActiveMenu('aboutMe')}"
+             (click)="onChangeSlide('aboutMe')">
+          About me
+        </div>
+        <div class="header__wrapper__burgerMenu__list__item karantina-bold"
+             [ngClass]="{'active': getIsActiveMenu('myProjects')}"
+             (click)="onChangeSlide('myProjects')">
+          Projects
+        </div>
+        <div class="header__wrapper__burgerMenu__list__item karantina-bold"
+             [ngClass]="{'active': getIsActiveMenu('contactMe')}"
+             (click)="onChangeSlide('contactMe')">
+          Contacts
+        </div>
+      </div>
+    </div>-->
+  </div>
+  <div class="header__changeLanguage"></div>
+</div>
