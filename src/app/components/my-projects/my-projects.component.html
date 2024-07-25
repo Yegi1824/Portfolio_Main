@@ -1,0 +1,46 @@
+<div class="myProjects">
+  <div class="myProjects__wrapper">
+    <div class="myProjects__wrapper__mainText karantina-bold">
+      My Propjects
+    </div>
+    <div class="myProjects__wrapper__icon">
+      <img src="assets/image/project_icon.png" alt="projectIcon">
+    </div>
+    <div class="myProjects__wrapper__cards">
+      <div class="myProjects__wrapper__cards__item"
+           *ngFor="let oProject of aoProjects">
+        <div class="myProjects__wrapper__cards__item__hoverElement">
+          <div class="myProjects__wrapper__cards__item__hoverElement__name karantina-bold">
+            {{oProject.sName}}
+          </div>
+          <div class="myProjects__wrapper__cards__item__hoverElement__linksBlock">
+            <div class="myProjects__wrapper__cards__item__hoverElement__linksBlock__item"
+                 (click)="onOpen_External(oProject.nID, 'git', oProject.sUrl_GitHub)"
+                 appHoverImageChange="assets/image/gitHub_Icon_hover.svg">
+              <img src="assets/image/gitHub_Icon.svg" alt="gitHub">
+            </div>
+            <div class="myProjects__wrapper__cards__item__hoverElement__linksBlock__item"
+                 (click)="onOpen_External(oProject.nID, 'project', oProject.sUrl_Project)"
+                 appHoverImageChange="assets/image/rocket_Icon_hover.svg">
+              <img src="assets/image/rocket_Icon.svg" alt="Open Project">
+            </div>
+          </div>
+        </div>
+        <div class="myProjects__wrapper__cards__item__header">
+          <img [src]="oProject.sUrl_Icon" alt="Project Icon">
+        </div>
+        <div class="myProjects__wrapper__cards__item__body">
+          <div class="myProjects__wrapper__cards__item__body__name karantina-bold">
+            {{oProject.sName}}
+          </div>
+          <div class="myProjects__wrapper__cards__item__body__description karantina-regular">
+            {{oProject.sDescription}}
+          </div>
+        </div>
+        <div class="myProjects__wrapper__cards__item__footer karantina-regular">
+          <span class="karantina-bold">Tech:</span> {{oProject.sTechStack}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

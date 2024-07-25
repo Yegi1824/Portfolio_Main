@@ -1,0 +1,205 @@
+.myProjects {
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__mainText {
+      padding-top: 80px;
+      font-size: 6rem;
+      color: #fff;
+    }
+
+    &__icon {
+
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: space-around;
+      gap: 5%;
+
+      &__item:hover .myProjects__wrapper__cards__item__hoverElement {
+        transform: translate(0, 0) !important;
+      }
+
+      &__item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1rem;
+        border: 2px solid #12B7B2;
+        background: #fff;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &__hoverElement {
+          border-radius: 1rem;
+          position: absolute;
+          backdrop-filter: blur(5px);
+          transform: translate(-500px);
+          transition: 200ms;
+          height: 100%;
+          width: 100%;
+          padding-top: 67%;
+
+          &__name {
+            font-size: 3rem;
+            color: #000;
+            background-color: #fff;
+          }
+
+          &__linksBlock {
+            margin-top: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &__item {
+              cursor: pointer;
+              background-color: #fff;
+              border: 2px solid #12B7B2;
+              border-radius: 1rem;
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+
+        &__header {
+          height: 40%;
+          width: 100%;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+          }
+        }
+
+        &__body {
+          height: 40%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 1rem;
+          justify-content: space-around;
+
+          &__name {
+            font-size: 3rem;
+            color: #12B7B2;
+          }
+
+          &__description {
+            font-size: 2rem;
+            color: #000;
+          }
+
+        }
+
+        &__footer {
+          padding: 0 1rem;
+          height: 20%;
+          font-size: 2rem;
+          color: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .myProjects {
+    overflow: hidden !important;
+
+    &__wrapper {
+      height: 100%;
+      padding: 0 16px !important;
+
+      &__mainText {
+        padding-top: 60px !important;
+        font-size: 2.5rem !important;
+      }
+
+      &__cards {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        align-items: stretch !important;
+
+        &__item {
+          width: 45% !important;
+          height: 45% !important;
+          border-radius: 0.5rem !important;
+          border: 1px solid #12B7B2 !important;
+
+          &__hoverElement {
+            border-radius: 0.5rem !important;
+            padding-top: 30% !important;
+
+            &__name {
+              font-size: 1rem !important;
+              color: #000 !important;
+              background-color: #fff;
+            }
+
+            &__linksBlock {
+
+              &__item {
+                border: 1px solid #12B7B2 !important;
+                border-radius: 0.5rem !important;
+                width: 30px !important;
+                height: 30px !important;
+                padding: 0.5rem !important;
+              }
+            }
+          }
+
+          &__header {
+            img {
+              border-radius: 0.5rem !important;
+            }
+          }
+
+          &__body {
+            padding: 0 0.5rem !important;
+
+            &__name {
+              font-size: 1rem !important;
+            }
+
+            &__description {
+              font-size: 0.7rem !important;
+            }
+
+          }
+
+          &__footer {
+            padding: 0 0.5rem !important;
+            font-size: 0.7rem !important;
+          }
+        }
+      }
+    }
+  }
+}

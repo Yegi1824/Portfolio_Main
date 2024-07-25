@@ -1,0 +1,94 @@
+<div class="aboutMe">
+  <div class="aboutMe__wrapper">
+    <div class="aboutMe__wrapper__description">
+      <div class="aboutMe__wrapper__description__info">
+        <div class="aboutMe__wrapper__description__info__name karantina-bold">
+          <div class="aboutMe__wrapper__description__info__name__text">
+            Yehor Ishchenko<span>.</span>
+          </div>
+          <div class="aboutMe__wrapper__description__info__name__divider"></div>
+        </div>
+        <div class="aboutMe__wrapper__description__info__socials karantina-regular">
+          <div class="aboutMe__wrapper__description__info__socials__row">
+            <span class="aboutMe__wrapper__description__info__socials__row__text"
+                  (click)="onOpenUrl('https://www.linkedin.com/in/yehor-ishchenko-080b83204/')">LinkedIn</span>
+            <span class="aboutMe__wrapper__description__info__socials__row__divider">|</span>
+            <span class="aboutMe__wrapper__description__info__socials__row__text"
+                  (click)="onOpenUrl('https://github.com/Yegi1824')">GitHub</span>
+          </div>
+          <div class="aboutMe__wrapper__description__info__socials__row">
+            <span class="aboutMe__wrapper__description__info__socials__row__text"
+                  (click)="onOpenUrl('https://t.me/yegizavr')">Telegram</span>
+            <span class="aboutMe__wrapper__description__info__socials__row__divider">|</span>
+            <span class="aboutMe__wrapper__description__info__socials__row__text"
+                  (click)="onOpenUrl('https://www.facebook.com/profile.php?id=100010805199760&locale=uk_UA')">Facebook</span>
+          </div>
+        </div>
+        <button class="btn-53" (click)="onChangeSlide('contactMe')">
+          <div class="original karantina-bold">Contact me</div>
+          <div class="letters karantina-bold">
+
+            <span>C</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>m</span>
+            <span>e</span>
+          </div>
+        </button>
+        <!--<div class="aboutMe__wrapper__description__info__contactMe">
+          <span class="aboutMe__wrapper__description__info__contactMe__text karantina-bold">
+            Contact me
+          </span>
+        </div>-->
+      </div>
+      <div class="aboutMe__wrapper__description__image">
+        <img src="assets/image/mainPhoto.png" alt="mainPhoto">
+      </div>
+      <div class="aboutMe__wrapper__description__introduction">
+        <div class="aboutMe__wrapper__description__introduction__mainText karantina-bold">
+          Introduction:
+        </div>
+        <div class="aboutMe__wrapper__description__introduction__mainTechnologies karantina-regular">
+          <div class="aboutMe__wrapper__description__introduction__mainTechnologies__text">
+            Front-End Developer
+          </div>
+          <div class="aboutMe__wrapper__description__introduction__mainTechnologies__text">
+            Node.js + Express.js Developer
+          </div>
+        </div>
+        <div class="aboutMe__wrapper__description__introduction__sayHi karantina-light">
+          Hi, I am a Front-End developer
+          cince october 2020, specializing in Angular.
+          I also have experience in developing mobile
+          applications using Ionic Framework.
+          In my personal projects, I have created basic
+          back-end solutions using Node.js.
+          I am constantly learning new technologies
+          and striving for professional growth.
+        </div>
+      </div>
+    </div>
+    <div class="aboutMe__wrapper__technologies">
+      <div class="aboutMe__wrapper__technologies__mainText karantina-bold">
+        Tech Stack 🔥
+      </div>
+      <div class="aboutMe__wrapper__technologies__block">
+        <div class="aboutMe__wrapper__technologies__block__item karantina-regular"
+             [ngStyle]="{'border': '3px solid ' + oTechnology.sBorderColor}"
+             *ngFor="let oTechnology of aTechnologies">
+          <div class="aboutMe__wrapper__technologies__block__item__image">
+            <img [src]="oTechnology.sImageUrl" alt="image">
+          </div>
+          <div class="aboutMe__wrapper__technologies__block__item__text">
+            {{oTechnology.sText}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

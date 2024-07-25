@@ -1,7 +1,0 @@
-{
-  "root": "dist/project",
-  "clean_urls": false,
-  "routes": {
-    "/**": "index.html"
-  }
-}

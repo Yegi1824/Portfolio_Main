@@ -1,0 +1,13 @@
+<app-header [getActiveSection]="getActiveSection"
+            [onChangeSlide]="onChangeSlide"></app-header>
+<div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)">
+  <div class="section">
+    <app-about-me [onChangeSlide]="onChangeSlide" class="section__component"></app-about-me>
+  </div>
+  <div class="section">
+    <app-my-projects [onChangeSlide]="onChangeSlide" class="section__component"></app-my-projects>
+  </div>
+  <div class="section">
+    <app-contact-me [onChangeSlide]="onChangeSlide" class="section__component"></app-contact-me>
+  </div>
+</div>
