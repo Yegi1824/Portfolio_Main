@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  sGoogleApiKey: 'AIzaSyBCo-dfE8Yh92tJ5MoAMwBcj9--aqYaLqk',\n  sTelegramBotToken: '7032326878:AAFRo2h6bdSvRgebLrJAkb5fxFOgbAGvW1w'\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

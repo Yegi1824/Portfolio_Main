@@ -1,5 +1,5 @@
 {
-  "root": "dist/project",
+  "root": "dist/src",
   "clean_urls": false,
   "routes": {
     "/**": "index.html"
