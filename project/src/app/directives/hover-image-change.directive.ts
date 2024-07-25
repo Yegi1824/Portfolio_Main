@@ -1,9 +1,9 @@
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appHoverImageChange]'
 })
-export class HoverImageChangeDirective {
+export class HoverImageChangeDirective implements OnInit {
   @Input() appHoverImageChange: any = '';
   @Input() originalSrc: any = '';
 

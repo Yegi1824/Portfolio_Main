@@ -19,10 +19,10 @@
     ],
     "paths": {
       "@fullpage": [
-        "dist/@fullpage"
+        "src/app/externalLibrary/@fullpage"
       ],
       "@fullpage/*": [
-        "dist/@fullpage/*"
+        "src/app/externalLibrary/@fullpage/*"
       ]
     }
   }
