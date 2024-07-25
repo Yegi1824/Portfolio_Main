@@ -1,6 +1,8 @@
+<app-loading-screen *ngIf="bLoading"></app-loading-screen>
 <app-header [getActiveSection]="getActiveSection"
+            [hidden]="bLoading"
             [onChangeSlide]="onChangeSlide"></app-header>
-<div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)">
+<div fullpage id="fullpage2" [options]="config" (ref)="getRef($event)" [hidden]="bLoading">
   <div class="section">
     <app-about-me [onChangeSlide]="onChangeSlide" class="section__component"></app-about-me>
   </div>

@@ -12,6 +12,7 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { HoverImageChangeDirective } from './directives/hover-image-change.directive';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HttpClientModule} from '@angular/common/http';
     AboutMeComponent,
     MyProjectsComponent,
     ContactMeComponent,
-    HoverImageChangeDirective
+    HoverImageChangeDirective,
+    LoadingScreenComponent
   ],
   imports: [
     BrowserModule,
