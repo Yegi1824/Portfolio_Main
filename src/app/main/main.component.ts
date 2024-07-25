@@ -69,9 +69,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     }
 
     onAllImagesLoaded() {
-        console.log('All images have been loaded.');
         this.bLoading = false;
-        // Perform actions after all images have loaded
     }
 
     getRef(fullPageRef) {

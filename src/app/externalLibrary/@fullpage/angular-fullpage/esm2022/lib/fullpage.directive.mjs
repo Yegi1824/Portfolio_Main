@@ -22,7 +22,6 @@ class FullpageDirective {
         }
     }
     initFullpage() {
-        console.log("fullpage", fullpage);
         this.fullpageApi = new fullpage('#' + this.id, this.options);
         this.addBuildFunction();
         this.ref.emit(this.fullpageApi);
